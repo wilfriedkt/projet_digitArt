@@ -1,0 +1,337 @@
+@import url(https://www.1001fonts.com/z-arista-font.html?size=-7);
+
+:root {
+
+    /* Colors: */
+    --unnamed-color-022d541c: #022D541C;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-022d54d9: #022D54D9;
+    --unnamed-color-a7bd4328: #A7BD4328;
+    --unnamed-color-fb9818: #FB9818;
+    --unnamed-color-022d54: #022D54;
+    
+    /* Font/text values */
+    --unnamed-font-family-outfit: Outfit;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-28: 28px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-line-spacing-35: 35px;
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.left-section {
+    background-image: url(./Image/Groupe-img-connectez-vous-22.png);
+    background-size: cover; /* ou 'contain' si vous préférez conserver le ratio de l'image */
+    background-position: center; /* pour centrer l'image */
+    background-repeat: no-repeat; /* pour éviter les répétitions de l'image */
+    color: white;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.left-section-text-container{
+    position: absolute;
+    top: 2px;
+}
+.left-section .left-section-text-container h1 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    
+}
+.left-section .left-section-text-container ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.4em;
+    margin-top: 1em;
+    font-size: clamp(10px,2em,20px);
+}
+
+.left-section-text-container ul div{
+   
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-section .left-section-text-container ul div li {
+    text-align: left;
+    padding: 7px;
+}
+.left-section .left-section-text-container ul div span{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+
+
+
+.right-section {
+    background-color: rgb(249, 249, 250);
+  
+}
+
+
+.container-right-section{
+  
+    width: 100%;
+   
+}
+.right-section h2 {
+    font-size: clamp(1.3em, 2.5vw, 400px);
+    margin-bottom: 10px;
+   
+    
+  
+}
+.container-bouton-span-gle-email-connect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        margin-top: 2em;
+        margin-bottom: 2em;
+       
+}
+
+.span-gle-email-connect{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right-section a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+.email-btn {
+    background-color: #4285f4;
+    color: white;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
+}
+
+.terms {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+@media screen and (max-width:585px) {
+        
+    .container {
+        height: 100vh;
+    }
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        padding-right: 0;
+        padding-left: 0;
+       
+    }
+    .container-right-section{
+        width: 100%;
+        height: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .container-right-section h2{
+        font-size: clamp(10px,7vw,30px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container-right-section .qst p{
+        font-size: clamp(4px,4vw,15px);
+        text-align: center;
+    }
+    .container-right-section .terms{
+        font-size: clamp(4px,4vw,10px);
+        text-align: center;
+    }
+    
+    .container-bouton-span-gle-email-connect{
+   
+    margin-top: 1em;
+    margin-bottom: 1em;
+   
+    }
+    .span-gle-email-connect button,.container-bouton-span-gle-email-connect button {
+        font-size: clamp(8px,4vw,30px);
+    }
+
+}
+
+@media screen and (min-width:585px)and (max-width:768px) {
+    .container {
+        height: 100vh;
+    } 
+
+    .right-section{
+        padding-right: 0;
+        padding-left: 0;
+        width: 50%;
+       
+    }
+    .left-section{
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+       
+    }
+   
+   
+    .container-right-section{
+        height: 100%;
+        margin: 0%;
+        width: 100%;
+        padding: 1em;
+    }
+    .container-right-section h2{
+        font-size: clamp(5px,4vw,20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container-right-section .qst p{
+        font-size: clamp(4px,2vw,15px);
+        text-align: center;
+    }
+    .container-right-section .terms{
+        font-size: clamp(10px,1.7vw,14px);
+        text-align: center;
+    }
+    
+    .container-bouton-span-gle-email-connect{
+   
+    margin-top: 1em;
+    margin-bottom: 1em;
+   
+    }
+    .span-gle-email-connect button,.container-bouton-span-gle-email-connect button {
+        font-size: clamp(10px,2vw,20px);
+    }
+
+    
+}
+@media screen and (min-width:769px) {
+    .container {
+        height: 100vh;
+    } 
+
+    .right-section{
+        padding-right: 0;
+        padding-left: 0;
+        width: 50%;
+       
+    }
+    .left-section{
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+       
+    }
+   
+    .container-right-section{
+        height: 100%;
+        margin: 0%;
+        width: 100%;
+        padding: 1em;
+    }
+    .container-right-section h2{
+        font-size: clamp(5px,4vw,20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container-right-section .qst p{
+        font-size: clamp(4px,2vw,15px);
+        text-align: center;
+    }
+    .container-right-section .terms{
+        font-size: clamp(10px,1.7vw,14px);
+        text-align: center;
+    }
+    
+    .container-bouton-span-gle-email-connect{
+   
+    margin-top: 1em;
+    margin-bottom: 1em;
+   
+    }
+    .span-gle-email-connect button,.container-bouton-span-gle-email-connect button {
+        font-size: clamp(10px,1.8vw,20px);
+    }
+    .span-gle-email-connect{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width:585px){
+    .left-section .left-section-text-container h1{
+        font-size: clamp(15px,3vw,100px);
+    }
+    .left-section .left-section-text-container ul{
+        font-size: clamp(5px,2vw,20px);
+    }
+}

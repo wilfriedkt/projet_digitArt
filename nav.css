@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+
+img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #022d54;
+    margin-right: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400; 
+}
+
+.nav-link:hover{
+    color: #fb9818;
+}
+
+.dropdown>.dropdown-menu {
+    background-color: #FFF;
+    border: none;
+    border-radius: 0;
+}
+
+.lni-grid-alt {
+    font-size: 1.5rem;
+}
+
+.lni-cross-circle {
+    font-size: 2rem;
+}
+
+
+
+@media (min-width:992px) {
+
+    .dropdown>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: block;
+        transition: all 0.1s ease-out;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        padding: 20px 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-item:hover {
+        color: #FFF;
+        background-color: #000;
+    }
+}
+
+.nav-item:last-child .nav-link {
+    color: #A7BD43; 
+    border: 2px solid #A7BD43; 
+    padding: 5px 20px; 
+    border-radius: 5px; 
+
+}
+
+.nav-item:last-child .nav-link:hover{
+    background-color: #A7BD4323;
+}
+
