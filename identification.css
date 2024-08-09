@@ -1,0 +1,795 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+   
+    padding-top: 5%;
+    
+}
+.fondBlue{
+   
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #022D54;
+}
+.fondBlanc{
+  
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    
+   
+}
+.step{
+  
+    height: 150PX;
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+  
+
+}
+.chp-oblig{
+    
+    margin-top: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FB9818;
+}
+body form{
+  
+    background-color: white;
+    width: 100%;
+  
+    
+    
+}
+.text{
+    text-align: center;
+    color: #022D54;
+   font-family: "outfit";
+   font-style: bold;
+  
+}
+.contenu{
+    padding: 2%;
+}
+form input{
+    height:2.5em;
+    border-radius: 5px;
+   
+}
+select{
+    height:2.9em;
+    
+}
+#uniqueselectt{
+    width:25em;
+}
+
+.form-select{
+    border: 9px solid #022D54B7;
+}
+
+.container2{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.container2 div{
+    display: flex;
+    flex-direction: column;
+  
+    width: 25em;
+    
+}
+
+
+
+/*INPTU FILE*/
+.file-input-u{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+ 
+    height: 15em;
+
+}
+.file-input-container{
+    position: relative;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100%;
+    
+}
+
+.file-input-container input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    
+   
+}
+
+.file-input-container label {
+    display: inline-block;
+    width: 100%;
+    border: 2px dashed rgba(2, 45, 84, 1);
+    border-radius: 5px;
+    background-color: rgba(2, 45, 84, 0.188);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.file-input-container label .file-name {
+    display: none;
+    vertical-align: middle;
+    margin-left: 10px;
+   
+}
+
+.file-input-container input[type="file"] + label .file-label,
+.file-input-container input[type="file"]:not(:valid) + label .file-name {
+    display: inline-block;
+}
+
+.file-input-container input[type="file"]:valid + label .file-label {
+    display: none;
+}
+
+.file-input-container input[type="file"]:valid + label .file-name {
+    display: inline-block;
+}
+
+
+/* fin fin fin INPTU FILE*/
+.boutons{
+  height: 90px;
+  width: 100%;
+  margin-top: 2em;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boutons button[type="submit"],.boutons button[type="button"]{
+    height: 60%;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+}
+.boutons button[type="submit"]{
+    background: #A7BD43 ;
+}
+.boutons button[type="button"]{
+background: #022D54CF;
+border-radius: 5px;
+}
+
+
+#annulerform{
+    display: none;
+}
+
+
+
+/* code de input du telephone*/
+.form-group {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+.form-group  #telId{
+    border-right: 1px solid #022D54B7;
+    width:13%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
+}
+.form-group .form-group-input{
+    width:100%; 
+  
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 5px;
+    padding: 5px;
+   
+}
+
+.phone-input select {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 16px;
+   
+    margin-right: 10px;
+    appearance: none; 
+    cursor: pointer;
+}
+
+.phone-input select:focus {
+    outline: none;
+}
+
+.phone-input input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.phone-input input:focus {
+    outline: none;
+
+}
+
+.phone-input select,
+.phone-input input {
+    height: 100%;
+}
+/*fin*/
+
+
+
+/* steppers steppers steppers stepperssteppers stepperssteppers steppers*/
+
+.toutstep{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    
+}
+.etape{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.etape>*{
+  
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+  
+}
+#identification{
+    width: 14%;
+}
+.trait {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 5px;
+    width: 809px;
+    background-color: rgb(118, 110, 110);
+    z-index: -4;
+}
+.cercle {
+    height: 25px;
+    width: 25px;
+    
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #022D54;
+    
+}
+.cercle::before {
+    content: '';
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+   
+}
+.done {
+    background-color: rgb(29, 219, 57);
+}
+.editing::before {
+    background-color: rgba(251, 152, 24,0.6);
+    z-index: -1;
+}
+.editing{
+    background-color: rgb(251, 152, 24);
+    
+}
+.colorStepDone{
+    color: rgb(29, 219, 57);
+}
+.colorStepEditing{
+    color: #FB9818;
+}
+
+
+/*fin step step step*/
+
+
+
+
+
+
+
+@media screen and (max-width:470px) {
+    .fondBlue{
+        width: 100%;
+        padding-top: 2%;
+    }
+    .step{
+        font-size: clamp(9px, 1vw, 20px);
+        height: 50px;
+        border-bottom: solid #022D54;
+        
+    }
+    .etape{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .etape span{
+        
+        border: solid orange;
+    }
+    
+    #identification{
+        width: 12%;
+    }
+    #identification2{
+        width: 30%;
+    }
+    #identification3{
+        width: 20%;
+    }
+    .trait, .cercle{
+        display: none;
+    }
+    .toutstep{
+        width: 100%;
+        height: 10%;
+    }
+    .chp-oblig{
+       font-size: clamp(12px,2vw,20px);
+       margin-top:0.8em;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .form-group  #telId{
+        width: 20%;
+       
+    }
+   
+    #uniqueselectt{
+        width: 100%;
+        font-size:  clamp(14px,2vw,17px);
+    }
+    select{
+        width: 100%;
+    }
+    .container2{
+        width: 100%;
+    }
+    .container2 div{
+        width: 100%;
+        padding:0 ;
+
+    }
+    .container2 select{
+        width: 100%;
+        font-size:  clamp(14px,2vw,17px);
+        
+        
+    }
+    .container2 input::placeholder{
+        font-size:clamp(13px,2vw,17px);
+        opacity: 1;
+    }
+    select option{
+        font-size: clamp(12px,2vw,17px);
+    }
+    .form-group  #telId{
+        width: 18%;
+      
+        padding: 1%;
+    }
+    .form-group .form-group-input{
+       
+        width: 100%;
+    }
+    .contenu{
+        padding:0 ;
+    }
+    label{
+        font-size: clamp(15px,2vw,40px);
+    }
+    .file-input-container{
+        width: 100%;
+        height: 10%;
+    }
+    #ho{
+       
+        width: 50%;
+        padding: 2em;
+    }
+    body form{
+        width: 95%;
+    }
+    .file-input-u{
+        height: 50%;
+    }
+   
+    .file-input-container label{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .boutons button[type="submit"],.boutons button[type="button"]{
+        height:40%;
+        width: 28%;
+        font-size: clamp(12px,3.5vw,60px);
+    }
+}
+
+
+
+
+
+@media screen and (min-width:470px)and (max-width:626px) {
+    .fondBlue{
+        width: 100%;
+        padding-top: 1.3%;
+    }
+    .step{
+        font-size: clamp(10px, 1vw, 30px);
+        height: 50px;
+       
+        
+    }
+    .trait{
+        height: 3px;
+        width: 85%;
+    }
+    .cercle{
+        height: 15px;
+        width: 15px;
+    }
+    .cercle::before{
+        height: 28px;
+        width: 28px;
+    }
+    .toutstep{
+        width: 100%;
+        height: 10%;
+    }
+    .chp-oblig{
+       font-size: clamp(12px,3vw,20px);
+       margin-top:0.8em;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .form-group  #telId{
+        width: 24%;
+     
+        padding: 2%;
+    }
+    .form-group .form-group-input{
+     
+        width: 100%;
+    }
+    #uniqueselectt{
+        width: 100%;
+        font-size:  clamp(14px,2vw,17px);
+    }
+    .container2 select{
+        width: 100%;
+        font-size:  clamp(14px,2vw,17px);
+        
+        
+    }
+    .container2 input::placeholder{
+        font-size:clamp(13px,2vw,17px);
+        opacity: 1;
+    }
+    select option{
+        font-size: clamp(12px,2vw,17px);
+    }
+    .container2 div{
+        width: 43%;
+        padding: 0;
+    }
+    .contenu{
+        padding:0 ;
+    }
+    label{
+        font-size: clamp(14px,1.5vw,25px);
+    }
+    .file-input-container{
+        width: 50%;
+        height: 10%;
+    }
+    #ho{
+        height: 100%;
+        width: 100%;
+        padding: 2em;
+    }
+    body form{
+        width: 95%;
+    }
+    .file-input-u{
+        height: 50%;
+       
+    }
+   
+    .file-input-container label{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        
+    }
+    .boutons{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .boutons button[type="submit"],.boutons button[type="button"]{
+        height:50%;
+        width: 18%;
+        font-size: clamp(12px,2vw,40px);
+    } 
+   
+    .toutstep .etape{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0.5em;
+
+    }
+   
+    #identification{
+        width: 12%;
+    }
+    #identification2{
+        width: 60%;
+    }
+    #identification3{
+        width: 20%;
+    }
+    
+    .toutstep .etape span>* {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:626px){
+    .fondBlue{
+        width: 100%;
+        padding-top: 1.6%;
+    }
+    .step{
+        font-size: clamp(10px, 2vw, 20px);
+        height: 50px;
+       
+        
+    }
+    .trait{
+        height: 3px;
+        width: 85%;
+    }
+    .cercle{
+        height: 25px;
+        width: 25px;
+    }
+    .cercle::before{
+        height: 40px;
+        width: 40px;
+    }
+    .toutstep{
+        width: 100%;
+        height: 10%;
+    }
+    .chp-oblig{
+       font-size: clamp(12px,3vw,15px);
+       margin-top:2em;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .form-group  #telId{
+        width: 18%;
+       
+        padding: 2%;
+    }
+    .form-group .form-group-input{
+        
+        width: 100%;
+    }
+    #uniqueselectt{
+        width: 100%;
+        font-size:  clamp(14px,2vw,17px);
+    }
+    .container2 select{
+        width: 100%;
+        font-size:  clamp(14px,2vw,17px);
+        
+        
+    }
+    .container2 input::placeholder{
+        font-size:clamp(13px,2vw,17px);
+        opacity: 1;
+    }
+    select option{
+        font-size: clamp(12px,2vw,17px);
+    }
+    .container2 div{
+        width: 40%;
+        padding: 0;
+    }
+    .contenu{
+        padding:0 ;
+    }
+    label{
+        font-size: clamp(14px,1.5vw,25px);
+    }
+    .file-input-container{
+        width: 50%;
+        height: 100%;
+    }
+    #ho{
+        height: 80%;
+        width: 100%;
+        padding: 2em;
+    }
+    body form{
+        width: 95%;
+    }
+    
+    .file-input-container{
+        width: 40%;
+       
+        height: 15em;
+        padding: 0%;
+    }
+    .file-input-u{
+        height: 100%;
+        padding: 0%;
+    }
+   
+    .file-input-container label{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        
+    }
+    .boutons{
+     
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .boutons button[type="submit"],.boutons button[type="button"]{
+        height:50%;
+        width: 18%;
+        font-size: clamp(15px,1vw,40px);
+    } 
+   
+    .toutstep .etape{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0.5em;
+       
+
+    }
+   
+    #identification{
+        width: 12%;
+    }
+    #identification2{
+        width: 60%;
+    }
+    #identification3{
+        width: 20%;
+    }
+    
+    .toutstep .etape span>* {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
