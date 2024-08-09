@@ -1,0 +1,179 @@
+:root {
+    --orange-color: #FB9818;
+    --button-color: #A7BD43;
+    --about-color: #d9e9e5;
+    --text-color: #003366;
+    --background-color: #022D54; /* ou la couleur du pied du footer */
+    --footer-head-color: #022D541C;
+    --border-color: #e1e1e1;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fondu 1s ease-in-out forwards;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+.formulaire-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #00172d;;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    animation: fondu 1s ease-in-out;
+}
+.formulaire-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(135deg, #ffffffde, #ffffff);
+    z-index: -1;
+    transform: translate(-10%, -10%);
+    transition: transform 0.8s ease;
+}
+.formulaire-container:hover::before {
+    transform: translate(0, 0);
+}
+h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+@keyframes agrandirTexte {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-group label {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: calc(100% - 24px); /* Réduit la largeur des champs */
+    padding: 8px; /* Réduit le padding */
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px; /* Réduit la taille de la police */
+    transition: all 0.3s ease;
+}
+select, option {
+    color: var(--text-color)
+}
+#autre-marque, #autre-categorie {
+    margin-top: 5px;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--orange-color);
+    box-shadow: 0 0 8px var(--orange-color);
+    outline: none;
+}
+.form-group input:hover, .form-group select:hover, .form-group textarea:hover {
+    border-color: var(--orange-color);
+    transform: scale(1.02);
+}
+.form-group textarea {
+    height: 100px; /* Réduit la hauteur du textarea */
+}
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les champs */
+}
+.form-group-inline .form-group {
+    flex: 1;
+}
+.upload-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.upload-image input[type="file"] {
+    display: none;
+}
+.upload-image label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-color);
+    border: 0px solid var(--text-color);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px var(--text-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 350px; /* Largeur maximale pour l'aperçu de l'image */
+    text-align: center;
+}
+.upload-image label:hover {
+    box-shadow: 0 6px 12px var(--text-color)
+}
+.upload-image img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.form-group-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les boutons */
+}
+.form-group-buttons button {
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 250px; /* Largeur des boutons */
+}
+.form-group-buttons #btn-ajouter {
+    background-color: var(--orange-color);
+    animation: agrandirTexte 2s infinite alternate;
+}
+
+.form-group-buttons button:hover {
+    transform: scale(1.05);
+}
+.form-group-buttons .btn-annuler {
+    background-color: var(--button-color);
+    color: var(--about-color);
+}
+
+
+@keyframes fondu {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
