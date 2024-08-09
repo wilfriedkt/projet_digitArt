@@ -185,16 +185,13 @@ a:hover {
     max-width: 10%;
 }
   .row {
-      flex-direction: row;
+      flex-direction: column;
   }
 
   .col-one-two {
-      flex-direction: row;
+      flex-direction: column;
   }
 
-  .col-two {
-      margin-top: 90px;
-  }
 
   .col-md-6 {
       max-width: 90%;

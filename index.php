@@ -110,6 +110,38 @@
         </div>
     </div>
 
+    
+    <section class="reconnect">
+        <div class="container">
+            <div class="reconnect-content">
+                <div class="reconnect-text">
+                    <h2>Rapprochement client-artisan</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Nullam non risus quis nunc tincidunt imperdiet et eu metus.</li>
+                        <li>Vestibulum a massa ut nisi volutpat fermentum et ut nulla.</li>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ad quas! Dolorem eos eveniet amet voluptates! Aliquam voluptates eveniet in doloremque nostrum omnis facilis eos. Asperiores pariatur ratione laboriosam! Iure?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque ad corrupti quis accusamus nostrum error, reiciendis, a doloremque rerum, fugit facilis assumenda deleniti eum delectus voluptate at? Soluta, vero laudantium!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic deserunt cum accusamus inventore, placeat ab. Accusamus obcaecati nihil repudiandae, mollitia delectus provident beatae. Quas aut accusamus provident nulla quisquam nisi?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia accusamus vel quae voluptate perspiciatis. Adipisci voluptas molestiae provident repellendus perspiciatis totam vitae labore. Cum nisi rem velit dolore, ipsam a!
+                        </p>
+                    </ul>
+                </div>
+                <div class="reconnect-image">
+                    <img src="Image/RAPPROCHEMENT.png" alt="Rapprochement Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Tentez le meilleur</h2>
+            <button class="cta-btn" style="color: white;"><a href="Formulaire2.html">S'inscrire</a></button>
+        </div>
+    </section>
+
   
     <section class="features" id="features">
         <div class="container">
@@ -170,7 +202,7 @@
     </section>
     
     <section class="logo-container">
-        <p>Ils nous font confiance</p>
+        <p style="font-size: 12px;">Ils nous font confiance</p>
         <div class="logo-grid">
             <img src="Image/logo uvci.png" alt="Logo 1">
             <img src="Image/logo.png" alt="Logo 2">

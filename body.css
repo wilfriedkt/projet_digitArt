@@ -30,7 +30,6 @@ body {
 }
 
 .hero-text h1{
-    font-family: 'Arista', sans-serif;
     font-weight: 400;
     font-size: 25px;
 }
@@ -400,10 +399,144 @@ body {
             margin: 0 auto;
             
         }
+
+/* Section Rapprochement */
+.reconnect {
+    background-color: #95dadf;
+    padding: 40px 0;
+}
+
+.reconnect-content {
+    display: flex;
+    flex-direction: row; /* Par défaut, éléments côte à côte */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les éléments */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.reconnect-text {
+    flex: 1;
+    text-align: left; /* Alignement du texte à gauche pour les grands écrans */
+    padding: 15px;
+}
+
+.reconnect-text h2 {
+    font-weight: bold; /* Titre en gras */
+    margin-bottom: 20px;
+}
+
+.reconnect-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+    align-items: center;
+}
+
+.reconnect-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+.cta {
+    background-color: #022D54;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cta h2 {
+    margin: 0;
+}
+
+.cta-btn {
+    padding: 10px;
+    border: none;
+    background-color: #e87c00;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    li, p, a {
+        font-size: 12px;
+    }
+
+    .reconnect-image {
+        margin: 15px 0; /* Ajouter de l'espace autour de l'image */
+        margin-left: 10px;
+    }
+
+    .reconnect-image img {
+        max-width: 50%; /* Réduire la taille de l'image pour les petits écrans */
+
+
+    }
+}
+@media (max-width: 768px) {
+    li, p, a {
+        font-size: 15px;
+    }
+    .reconnect-content {
+        flex-direction: column; /* Empiler les éléments verticalement */
+        align-items: center; /* Centrer les éléments */
+        justify-content: center;
+    }
+    
+    .reconnect-text {
+        text-align: center; /* Centrer le texte */
+        justify-content: center;
+    }
+
+    .reconnect-image {
+        margin: 20px 0; /* Ajouter de l'espace autour de l'image */
+    }
+
+    .reconnect-image img {
+        max-width: 80%; /* Réduire la taille de l'image pour les petits écrans */
+    }
+}
+
+@media (min-width: 768px) {
+    .reconnect-content {
+        flex-direction: row; /* Réinitialiser la disposition pour les écrans plus grands */
+        align-items: center; /* Aligner les éléments au centre */
+        justify-content:left;
+    }
+
+    .reconnect-text {
+        text-align: left; /* Aligner le texte à gauche */
+        justify-content: center;
+    }
+
+    .reconnect-image {
+        margin: 10px; /* Enlever les marges autour de l'image */
+        justify-content: right;
+        margin-left: 10px;
+    }
+    .reconnect-image img{
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+  
         
        /* Sections */
 .features, .about, .testimonials, .logo-container {
     padding: 40px 0;
+}
+
+.testimonial, .features .sous-titre{
+    padding-top: 20px;
 }
 
 .features h2, .about h2, .testimonials h2 {
@@ -432,6 +565,7 @@ body {
 .about {
     background-color: #d9e9e5;
     padding: 40px 0;
+    justify-content: center;
   }
 
 .about-content {
@@ -591,7 +725,7 @@ body {
     }
     
     .feature-card, .logo-grid img {
-        width: calc(40% - 20px); /* Ajuste pour 2 éléments par ligne */
+        width: calc(30% - 20px); /* Ajuste pour 2 éléments par ligne */
     }
     .logo-grid img {
         max-width: 20px; /* Réduit la taille des logos sur les très petits écrans */
