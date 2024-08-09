@@ -1,91 +1,123 @@
+/* Variables */
+:root {
+  --orange-color: #FB9818;
+  --button-color: #A7BD43;
+  --secondary-color: #6c757d;
+  --text-color: #003366;
+  --background-color: #f8f9fa;
+  --footer-head-color: #022D541C;
+  --border-color: #e1e1e1;
+  --footer-foot-color: #022D54;
+}
 
+
+/* Footer */
 footer {
   background-color: var(--footer-head-color);
+  color: var(--footer-foot-color);
+  padding: 30px;
 }
 
-footer h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  position: relative; /* Pour positionner le conteneur de bordure par rapport à l'en-tête */
-}
-
-footer .border-container {
-  display: inline-block; /* Ajuste la largeur en fonction du contenu */
-  border-bottom: 1px solid var(--primary-color); /* Réduit la largeur de la bordure */
-  padding-bottom: 0.5rem; /* Ajustez l'espacement selon vos besoins */
+/* Container */
+footer .container { 
+  min-width: 100%;
+  margin: 0 ;
 }
 
 
+.footer-foot {
+  text-align: center;
+  min-width: 100%;
+  height: 50px;
+  background-color: var(--footer-foot-color);
+}
 
+.spam-foot {
+  padding-bottom: 40px;
+}
 
-footer .row {
- 
+.border-container {
+  display: inline-block;
+  border-bottom: 4px solid var(--footer-foot-color);
+  padding-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.scnd-title-footer {
+  font-weight: 600;
+}
+
+/* Layout */
+.row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Ajoute de l'espace entre les colonnes */
+  gap: 20px;
 }
 
-footer .col-one-two {
+.col-one-two {
   display: flex;
 }
 
-footer .col-md-6 {
+.col-md-6 {
   flex: 1;
-  min-width: 280px; /* Assure une bonne réactivité */
+  min-width: 280px;
 }
 
-
-footer ul {
+/* Lists and Links */
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-footer li {
+.ul1-footer li, .ul2-footer li {
   margin-bottom: 0.5rem;
 }
 
-footer a {
+a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--footer-foot-color);
   transition: color 0.3s ease-in-out;
 }
 
-footer a:hover {
-  color: var(--primary-dark-color);
+a:hover {
+  color: var(--orange-color);
 }
 
-
-
-
-
-footer ul ul {
+.ul1-footer ul {
   padding-left: 20px;
 }
 
+.sous-titre {
+  font-weight: 600;
+}
+
+/* Social Icons */
 .social-icons {
   list-style: none;
   padding: 0;
   display: flex;
   margin-top: 30px;
-  gap: 15px; /* Ajoute de l'espace entre les icônes sociales */
+  gap: 15px;
 }
+
 .social-icons li {
   margin: 0;
 }
 
 .social-icons a {
-  color: var(--primary-color);
+  color: var(--footer-foot-color);
   font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: var(--primary-dark-color);
+  font-size: 2rem;
+  color: var(--button-color);
 }
 
-/* Formulaire */
-footer form {
+/* Form */
+.footer-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -93,7 +125,7 @@ footer form {
 
 .footer-form input[type="email"] {
   padding: 10px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--footer-foot-color);
   border-radius: 4px;
 }
 
@@ -101,127 +133,71 @@ footer form {
   padding: 10px;
   background-color: var(--button-color);
   border: none;
-  color: #fff;
+  color: var(--footer-foot-color);
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease-in-out;
 }
 
-
-
-/* Réactivité pour les écrans plus larges que les tablettes */
-@media (min-width: 768px) {
-  footer h2{
-    font-size: 35px;
-}
-footer p, footer a{
-    font-size: 24px;
-  }
-  footer .logo-grid img {
-      max-width: 70px; /* Réduit la taille des logos sur les petits écrans */
-      gap: 100px;
-  }
-  footer .row {
-    flex-direction: row; /* Assure que les colonnes sont en ligne */
-    align-items: center;
-    gap: 15px;
-  }
-  footer .col-one-two {
-    flex-direction: row;
-    margin-left: 0px;
-    gap: 15px;
-  }
-  footer .col-two {
-    margin-top: 90px;
-  }
-  footer .col-md-6 {
-    /* Les colonnes prennent toute la largeur sur les petits écrans */
-    max-width: 100%; /* Assure que les colonnes prennent une moitié de la largeur sur les écrans de tablette */
-    padding-top: 0; /* Supprime l'espacement en haut si nécessaire */
-  }
- 
-  
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  footer h2{
-    font-size: 24px;
-  }
-  footer a, footer p{
-      font-size: 15px;
-  }
-  footer .feature-card, footer .logo-grid img {
-      width: calc(40% - 20px); /* Ajuste pour 2 éléments par ligne */
-  }
-  footer .logo-grid img {
-      max-width: 30px; /* Réduit la taille des logos sur les petits écrans */
-      gap: 30px;
-  }
-
-  footer .testimonials .testimonial {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      text-align: center;
-      gap: 5px;
-  }
-  footer .testimonials .testimonial img {
-    border-radius: 15px; /* arondir les bordures */
-    max-width: 360px; /* Taille maxi des images */
-    height: auto;
-    margin-right: 10px;
+  .logo{
+    max-width: 20%;
 }
+  .row {
+      flex-direction: column;
+  }
 
-footer .row {
-    flex-direction: column;
-    
-  }
-  footer .col-two {
-    margin-top: 0px;
-  }
   .col-one-two {
-    flex-direction: column;
+      flex-direction: column;
   }
-  
+
   .col-md-6 {
-    min-width: 100%; /* Assure que les colonnes prennent toute la largeur */
+      min-width: 100%;
   }
+
   .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Ajoute de l'espace entre les icônes sociales */
+      justify-content: center;
   }
-  
 }
 
+@media (min-width: 768px) {
+  .row {
+      flex-direction: row;
+  }
 
+  .col-one-two {
+      flex-direction: row;
+  }
+
+  .col-two {
+      margin-top: 90px;
+  }
+
+  .col-md-6 {
+      max-width: 100%;
+      padding-top: 0;
+  }
+}
 @media (max-width: 480px) {
-  footer h2{
-      font-size: 20px;
-  }
-  footer a, footer p{
-      font-size: 12px;
-  }
-  footer .features h2, footer .about h2, footer .testimonials h2 {
-      text-align: center;
-  }
-  footer .about {
-      padding: 5px 0;
-  }
-  footer .container {
-      width: 100%;
-      max-width: 300px;
-  }
-  
-  footer .feature-card, footer .logo-grid img {
-      width: 45%; /* Ajuste pour 1 élément par ligne */
-  }
-  footer .logo-grid img {
-      max-width: 30px; /* Réduit la taille des logos sur les très petits écrans */
-      gap: 20px;
+  .logo{
+    max-width: 10%;
+}
+  .row {
+      flex-direction: row;
   }
 
+  .col-one-two {
+      flex-direction: row;
+  }
+
+  .col-two {
+      margin-top: 90px;
+  }
+
+  .col-md-6 {
+      max-width: 90%;
+      padding-top: 0;
+  }
 }
