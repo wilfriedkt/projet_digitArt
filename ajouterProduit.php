@@ -13,22 +13,22 @@
             <h2 id="titre">Ajouter une Nouvelle Annonce</h2>
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="titre-produit">Titre du Produit :</label>
+                    <label for="titre-produit">Titre de l'annonce :</label>
                     <input type="text" id="titre-produit" name="titre-produit" required>
                 </div>
                 <div class="form-group-inline">
                     <div class="form-group">
-                        <label for="categorie-produit">Catégorie du Produit :</label>
+                        <label for="categorie-produit">Catégorie de l'annonce :</label>
                         <select id="categorie-produit" name="categorie-produit" onchange="afficherChampAutre('categorie-produit', 'autre-categorie')">
                             <option value="">Sélectionner une Catégorie</option>
                             <option value="autre">Autre</option>
-                            <option value="electronique">Électronique</option>
-                            <option value="vetements">Vêtements</option>
+                            <option value="electronique">Catégorie 1</option>
+                            <option value="vetements">Catégorie 2</option>
                         </select>
                         <input type="text" id="autre-categorie" name="autre-categorie" placeholder="Veuillez spécifier" style="display: none;">
                     </div>
                     <div class="form-group">
-                        <label for="marque-produit">Marque du Produit :</label>
+                        <label for="marque-produit">Marque de l'annonce :</label>
                         <select id="marque-produit" name="marque-produit" onchange="afficherChampAutre('marque-produit', 'autre-marque')">
                             <option value="">Sélectionner une Marque</option>
                             <option value="autre">Autre</option>
@@ -40,30 +40,30 @@
                 </div>
                 <div class="form-group" style="display: flex; justify-content: space-between;">
                     <div style="width: 48%;">
-                        <label for="prix-produit">Prix du Produit :</label>
+                        <label for="prix-produit">Prix de l'annonce :</label>
                         <input type="text" id="prix-produit" name="prix-produit" required>
                     </div>
                     <div style="width: 48%;">
-                        <label for="mots-cles-produit">Mots-clés du Produit :</label>
+                        <label for="mots-cles-produit">Mots-clés de l'annonce :</label>
                         <input type="text" id="mots-cles-produit" name="mots-cles-produit" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="description-produit">Description du Produit :</label>
+                    <label for="description-produit">Description de l'annonce :</label>
                     <textarea id="description-produit" name="description-produit"></textarea>
                 </div>
                 <div class="image-container">
                     <div class="upload-image">
                         <label for="image-produit-1">
                             <img id="aperçu-1" src="" alt="Aperçu de l'image 1">
-                            <span>Choisir la Première Image</span>
+                            <span>Choisir la première image de l'annonce</span>
                         </label>
                         <input type="file" id="image-produit-1" name="image-produit-1" accept="image/*" onchange="apercevoirImage('image-produit-1', 'aperçu-1')">
                     </div>
                     <div class="upload-image">
                         <label for="image-produit-2">
                             <img id="aperçu-2" src="" alt="Aperçu de l'image 2">
-                            <span>Choisir la Deuxième Image</span>
+                            <span>Choisir la deuxième image de l'annonce</span>
                         </label>
                         <input type="file" id="image-produit-2" name="image-produit-2" accept="image/*" onchange="apercevoirImage('image-produit-2', 'aperçu-2')">
                     </div>

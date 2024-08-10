@@ -369,9 +369,6 @@ body {
         }
 
         @media (max-width: 768px) {
-           .logo{
-                max-width: 20%;
-            }
             .hero-image img {
                 max-width: 70%;
             }
@@ -384,9 +381,6 @@ body {
         }
 
         @media (max-width: 480px) {
-            .logo{
-                max-width: 10%;
-            }
             .content-images img {
                 max-width: 30%; /* Full width for very small screens */
             }
