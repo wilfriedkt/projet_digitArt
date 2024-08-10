@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+
+img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #022d54;
+    margin-right: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400; 
+}
+
+.nav-link:hover{
+    color: #fb9818;
+}
+
+.dropdown>.dropdown-menu {
+    background-color: #FFF;
+    border: none;
+    border-radius: 0;
+}
+
+.lni-grid-alt {
+    font-size: 1.5rem;
+}
+
+.lni-cross-circle {
+    font-size: 2rem;
+}
+
+
+
+@media (min-width:992px) {
+
+    .dropdown>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: block;
+        transition: all 0.1s ease-out;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        padding: 20px 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-item:hover {
+        color: #FFF;
+        background-color: #000;
+    }
+}
+
+.nav-item:last-child {
+    margin-left: 10px; /* Ajustez à votre convenance pour l'espacement à droite */
+}
+
+/* .nav-item:last-child .nav-link {
+    color: #A7BD43;
+    border: 2px solid #A7BD43;
+    padding: 5px 20px;
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out;
+} */
+
+.containernum1{
+    background-color: #A7BD4328;
+    padding: 5px 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+.containernum1 .p1{
+    color: #A7BD4328;
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 1;
+    letter-spacing: 0;
+
+}
+
+.containernum1 .contenernum1-divInterieur{
+    background-color: #A7BD43;
+    border-radius: 5px;
+    /* padding: 10px 5px; */
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex; /* Utilise Flexbox pour le placement */
+    align-items: center; /* Centre le contenu verticalement */
+    justify-content: center; /* Centre le contenu horizontalement */
+    
+    color: white;
+}
+
+.containernum1 .contenernum1-divInterieur p{
+    padding-top: 8px;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.containernum2{
+    background-color: #022D54CE;
+    height: 100%;
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 1px;
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+
+}
+
+.containernum2 img{
+    height: 20px;
+    width: 20px;
+}
+
+.containernum2 .con{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 5px;
+    border-bottom: 2px solid white;
+    padding-top: 8px;
+    margin-left: 2px;
+}
+
+.containernum2 .con p{
+    font-size: 20px;
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+
+}
+
+.containernum2 .con:nth-child(2) {
+    background-color: white;
+    max-width: max-content;
+}
+.containernum2 .con:nth-child(2) p{
+    color: #022D54;
+    
+}
+
+.grandediv{
+    display: flex;
+    
+}
+
+.grande-div-droite .content1{
+    box-sizing: border-box;
+    /* background-color: red; */
+
+}
+
+.grande-div-droite .content1 p{
+font-size: 23px;
+font-family: 'Arial', sans-serif;
+font-style: italic;
+font-weight: bold;
+color: #022D5430;
+
+}
+
+.gdd2info .nom {
+    color: #022D54CE;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.gdd2info p{
+    color: #022D54CE;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.gdd2 .gdd2-child{
+    display: flex;
+}
+
+.gdd2info{
+    display: flex;
+    flex-direction: column;
+}
+
+.gdd2info > div {
+    margin: 0; /* Réduit les marges entre les divs */
+    padding: 0; /* Réduit les espacements internes */
+}
+
+.gdd2info p {
+    margin: 0; /* Réduit les marges autour des paragraphes */
+    padding: 3px; /* Réduit les espacements internes des paragraphes */
+}
+
+.gdd2-child{
+    gap: 20px;
+}
+
+.gdd2-child2 .nom{
+font-size: 23px;
+font-family: 'Arial', sans-serif;
+font-style: italic;
+font-weight: bold;
+color: #022D5430;
+}
+
+.gdd2-child2 .elm{
+    color: #022D54CE;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.gdd2-child2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.gdd2-child2 > div {
+    margin: 0; /* Réduit les marges entre les divs */
+    padding: 0; /* Réduit les espacements internes */
+}
+
+.gdd2-child2 .nom {
+    margin-top: 40px; /* Réduit les marges autour de .nom */
+    padding: 0px; /* Réduit les espacements internes de .nom */
+}
+
+.gdd2-child2 .elm {
+    color: #022D54CE;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px; /* Réduit les marges autour des éléments elm */
+    padding: 4px; /* Réduit les espacements internes des éléments elm */
+}
+
+.gdd2-child3 .nom {
+font-size: 23px;
+font-family: 'Arial', sans-serif;
+font-style: italic;
+font-weight: bold;
+color: #022D5430;
+margin-top: 30px;
+}
+
+.gdd2-child3 .elm{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.gdd2-child3 .elm p{
+    color: #022D54CE;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.grande-div-droite{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px; /* Arrondit les coins de la ligne */
+    
+}
+
+.geolocalisation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.update-button {
+    background-color: #022D54;
+    border: none;
+    color: white; 
+    padding: 5px 10px; 
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px; 
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.update-button:hover {
+    background-color: #FB9818;
+}
