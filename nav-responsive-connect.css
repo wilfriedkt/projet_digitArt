@@ -319,3 +319,68 @@ hr {
 .update-button:hover {
     background-color: #FB9818;
 }
+
+@media screen and (max-width: 768px) {
+
+    .containernum1 .p1 {
+        font-size: 30px;
+    }
+    
+    .containernum1 .contenernum1-divInterieur p,
+    .gdd2info .nom,
+    .gdd2info p,
+    .gdd2-child2 .nom,
+    .gdd2-child2 .elm,
+    .gdd2-child3 .nom,
+    .gdd2-child3 .elm p {
+        font-size: 14px;
+    }
+
+    .grande-div-droite .content1 p {
+        font-size: 16px;
+    }
+
+
+    .containernum2 {
+        width: max-content; 
+        padding: 5px;
+    }
+
+    .containernum2 .con p {
+        font-size: 12px;
+    }
+
+    .containernum2 img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .gdd2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gdd2-child {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .geolocalisation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .grande-div-droite {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .gdd2-child3 .elm{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        
+    }
+}
